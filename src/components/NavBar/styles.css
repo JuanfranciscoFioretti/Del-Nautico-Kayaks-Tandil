@@ -1,0 +1,114 @@
+/* body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+} */
+
+.navBar {
+    display: flex;
+    position: fixed;
+    z-index: 1001;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 100vw;
+    background-color: #eda24653;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-right: 3em;
+}
+
+.logoContainer {
+    background-size: cover;
+}
+
+.logo {
+    background-image: url('../../assets/LogoImg/logo-definitivo.jpg');
+    object-fit: cover;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 10px;
+    transition: opacity 0.3s ease;
+}
+
+.menu.show {
+    opacity: 1;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.hamburguer {
+    display: none;
+    flex-direction: column;
+    gap: 2px;
+    cursor: pointer;
+}
+
+.line {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.open .line:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.open .line:nth-child(2) {
+    opacity: 0;
+}
+
+.open .line:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hamburguer {
+        display: flex;
+    }
+}
+
+
+/* NAVBAR UL Y LI */
+
+.navBarUl {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+    padding-top: .5em;
+}
+
+li {
+    display: block;
+    transition: .5s;
+}
+
+.navBarLi {
+    font-size:1.4em ;
+}
+
+.navBarUl:hover li {
+    filter: blur(1.3px);
+}
+
+.navBarUl li:hover {
+    filter: blur(0px);
+}

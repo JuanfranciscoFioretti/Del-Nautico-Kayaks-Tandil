@@ -1,0 +1,105 @@
+.cards-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    flex-wrap: wrap;
+}
+
+.section-title {
+    margin-top: 8em;
+    text-align: center;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    width: 310px;
+    max-width: 310px;
+    min-height: 420px;
+    background-size: cover;
+    border-radius: 25px !important;
+    margin-bottom: 2em;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    transition: 0.4s ease-out;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* border-radius: 15px; */
+}
+
+.image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+    transition: background 0.3s ease;
+}
+
+.card:hover .image-overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+    transition: opacity 1s ease;
+    /* background: transparent; */
+}
+
+.cardsTitles {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+.card-button {
+    position: absolute;
+    bottom: 10px;
+    left: 2.5%;
+    width: 95%;
+    padding: 10px;
+    border-radius: 15em !important;
+    cursor: pointer;
+    border-width: 3px !important;
+    /* background-color: #ffffff07;
+    border-color: #fff;
+    border-width: medium; */
+    /* border-color: white; */
+    /* border: none; */
+}
+
+.card-button:hover {
+    color: #e6870f !important;
+    border-color: #e6870f !important;
+    background-color: #e6850f09!important;
+}
+
+.card-1 {
+    background-image: url('../../assets/CardsImg/_DSC0024.jpg');
+}
+
+.card-2 {
+    background-image: url('../../assets/CardsImg/_DSC0030.jpg');
+}
+
+.card-3 {
+    background-image: url('../../assets/CardsImg/BOATS-CUTTED-2jpg.jpg');
+}
+
+
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 70%;
+        margin-bottom: 3em;
+    }
+}

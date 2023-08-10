@@ -1,0 +1,7 @@
+.header { 
+    position: relative;
+    min-height: 100vh;
+    background-image: url('../../assets/HeaderImg/HeaderImgShorter.jpg');
+    background-size: cover;
+    background-position: center;
+}

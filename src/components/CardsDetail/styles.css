@@ -1,0 +1,140 @@
+.cards-detail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    padding: 8em;
+
+    background-image: url('../../assets/BigImgs/DJI_0019-Pano.jpg');
+    background-size: cover;
+    background-position: center center;
+
+                                                        /* background: #ffce95;
+                                                        background: -webkit-radial-gradient(circle, #ffce95 0%, #f1f1f1 100%);
+                                                        background: radial-gradient(circle at right, #ffce95 0%, #f1f1f1 100%);    
+    
+                                                        z-index: -1;
+                                                        background: radial-gradient(ellipse at right, rgba(241, 157, 30, 0.713) 0%, transparent 40%); */
+}
+
+/* .cardsDetailImageOverlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.185), transparent);
+    height: 100%;
+} */
+
+
+.card-detail {
+    display: flex;
+    width: 100%;
+    max-width: 550px;
+    height: 215px;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    overflow: hidden;
+    
+    color: rgb(246, 246, 232);
+    background: rgba(234, 233, 233, 0.249);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255,255,255,0.175);
+                                                        /* background-color: rgba(123, 238, 238, 0.297);
+                                                        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.card-content {
+    flex: 1;
+    padding: 10px;
+    align-self: self-start;
+    margin-top: 1.5em;
+
+    max-height: 150px; /* Ajusta según necesites */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6; /* Número de líneas para mostrar */
+    -webkit-box-orient: vertical;
+}
+
+/* .card-content:hover {
+    max-height: 200px;
+    -webkit-line-clamp: 6;
+} */
+
+.div-img-container {
+    flex: 1;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.card-img {
+    max-width: 50%;
+    height: auto;
+    background-size: cover;
+    /* transition: max-width 0.9s ease; */
+}
+
+
+.card-img-1 {
+    background-image: url('../../assets/CardsImg/_DSC0030.jpg');
+    height: 100%;
+    transition: max-width 0.9s ease;
+}
+
+.card-img-2 {
+    background-image: url('../../assets/CardsImg/_DSC0024.jpg');
+    height: 100%;
+    transition: max-width 0.9s ease-in-out;
+    /* margin-left: 50% !important; */
+}
+
+.card-img-3 {
+    background-image: url('../../assets/CardsImg/BOATS-CUTTED-2jpg.jpg');
+    height: 100%;
+    transition: max-width 0.9s ease;
+}
+
+.expanded-1 {
+    max-width: 250%; /* Cambia el valor según sea necesario */
+} 
+.expanded-2 {
+    max-width: 250%; /* Cambia el valor según sea necesario */
+    /* margin-left: 25% !important; */
+} 
+.expanded-3 {
+    max-width: 250%; /* Cambia el valor según sea necesario */
+}
+
+.card-detail-1-y-3 {
+    margin-right: 3em;
+}
+
+.card-detail-2 {
+    margin-left: 3em;
+}
+
+@media (max-width: 768px) {
+    
+    .card-content {
+        padding: 10px;
+        max-height: 145px;
+    }
+                                                        /* .card-img {
+                                                            width: 60%;
+                                                            height: auto;
+                                                        }
+                                                        .cards-container {
+                                                            padding: 10px;
+                                                        }
+
+                                                        .card {
+                                                            flex-direction: column;
+                                                            width: 100%;
+                                                        } */
+
+                                                        /* .card-image,
+                                                        .card-content {
+                                                            flex: initial;
+                                                        } */
+
+}

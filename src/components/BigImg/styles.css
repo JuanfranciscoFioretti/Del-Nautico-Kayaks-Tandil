@@ -1,0 +1,21 @@
+.section-big-img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 16em; */
+}
+
+.divBigImg {
+    width: 100vw;
+    height: 130vh;
+    background-image: url('../../assets/HeaderImg/_DSC0035.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.imageOverlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.185), transparent);
+    height: 100%;
+}
