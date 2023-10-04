@@ -46,9 +46,8 @@ const CardsDetail = () => {
                 <div className="card-content">
                     <h3>Stand Up Paddle</h3>
                     <h6>
-                        Disfruta de navegar en las aguas del lago del fuerte, Tandil, Buenos Aires.
-                        Ofrecemos actividades guiadas para contingentes. Alquiler de kayaks, canoas, botes a pedal y tablas SUP.
-                        Todas las actividades están supervisadas por guias matriculados. 
+                        Disfrute de un nuevo reto sobre nuestros Stand Up Paddle. 
+                        Podrás disfrutar el paisaje por tu cuenta o formar parte de nuestras actividades guiadas. 
                     </h6>
                 </div>
             </div>
@@ -60,9 +59,9 @@ const CardsDetail = () => {
                 <div className="card-content">
                     <h3>Botes a pedal</h3>
                     <h6>
-                        Disfruta de navegar en las aguas del lago del fuerte, Tandil, Buenos Aires.
-                        Ofrecemos actividades guiadas para contingentes. Alquiler de kayaks, canoas, botes a pedal y tablas SUP.
-                        Todas las actividades están supervisadas por guias matriculados. 
+                        Aprecie el paisaje tandilense en un tranquilo paseo en Bote a pedal.
+                        Descrubra las bellezas que esconde nuestro famoso lago.
+                        Hasta 4 personas por bote. 
                     </h6>
                 </div>
             </div>

@@ -1,0 +1,32 @@
+.section-container {
+    text-align: center;
+    padding: 5em;
+    margin-top: 80px;
+}
+
+.sectionTitle {
+    font-size: 54px;
+    margin-bottom: 10px;
+}
+
+.sectionText {
+    font-size: 38px;
+    margin-top: 1em;
+    color: black;
+    line-height: 1.5;
+    text-align: center;
+    padding-left: 4.5em;
+    padding-right: 4.5em;
+}
+
+@media (max-width: 768px) {
+    .sectionTitle {
+        font-size: 44px;
+    }
+
+    .sectionText {
+        font-size: 28px;
+        padding-left: 2.5em;
+        padding-right: 2.5em;
+    }
+}

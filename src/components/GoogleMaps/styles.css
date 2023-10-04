@@ -1,0 +1,59 @@
+.section-two-columns {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+}
+.left-column {
+    order: 1;
+}
+.right-column {
+    order: 2;
+}
+
+/* .mapsIframe {
+    margin-right: 3em;
+} */
+
+.divLogoImg {
+    background-image: url('../../assets/LogoImg/DEL\ NAUTICO\ KAYAKS\ \ DEFINITIVO\ -\ LOGO\ -\ JPG\ RECORTADO\ .jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 400px;
+    max-width: 100%;
+}
+
+.destiny-button {
+    border-radius: 15em;
+    cursor: pointer;
+    border-width: 3px;
+    width: 150px;
+    border-color: #e6870f;
+    color: #e6870f;
+    background-color: rgba(240, 248, 255, 0.297);
+    /* color: #e6870f; */
+    /* height: fit-content; */
+}
+
+.icon {
+    /* height: 15px;
+    width: auto; */
+}
+
+
+@media (max-width: 1175px) {
+    .section-two-columns {
+        grid-template-columns: 1fr;
+    }
+
+    .left-column,
+    .right-column {
+        order: initial;
+        /* justify-self: center;
+        max-width: 100%; */
+    }
+
+    .divLogoImg {
+        margin-left: 20%;
+    }
+}

@@ -24,7 +24,7 @@
 
 .card:hover {
     transform: translateY(-10px);
-    transition: 0.4s ease-out;
+    transition: 0.6s ease-out;
 }
 
 .card img {
@@ -45,13 +45,13 @@
 }
 
 .card:hover .image-overlay {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.392) 0%, rgba(0, 0, 0, 0) 100%);
     transition: opacity 1s ease;
     /* background: transparent; */
 }
 
 .cardsTitles {
-    color: #fff;
+    color: #fdf6f6;
     display: flex;
     justify-content: center;
     margin-top: 3em;
@@ -73,22 +73,23 @@
     /* border: none; */
 }
 
-.card-button:hover {
+.card-button:hover,
+.card-button::after {
     color: #e6870f !important;
     border-color: #e6870f !important;
     background-color: #e6850f09!important;
 }
 
 .card-1 {
-    background-image: url('../../assets/CardsImg/_DSC0024.jpg');
+    background-image: url('../../assets/CardsImg/GOPR3336.jpg');
 }
 
 .card-2 {
-    background-image: url('../../assets/CardsImg/_DSC0030.jpg');
+    background-image: url('../../assets/CardsImg/STANDUP-PADDLE-CUTTED.jpg');
 }
 
 .card-3 {
-    background-image: url('../../assets/CardsImg/BOATS-CUTTED-2jpg.jpg');
+    background-image: url('../../assets/CardsImg/BOATS-CUTTED-3jpg.jpg');
 }
 
 

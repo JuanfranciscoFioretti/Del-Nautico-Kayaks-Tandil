@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import styles from './styles.css';
+import Logo from '../../assets/LogoImg/logo-definitivo-no-background.png'
 
 
 const NavBar = () => {
@@ -14,9 +15,7 @@ const NavBar = () => {
     return (
         <nav className='navBar'>
             <div className="logoContainer">
-                <div className='logo'>
-                    
-                </div>
+                <img className='navBarLogo' src={Logo} alt="" />
             </div>
             <div className={`menu ${showMenu ? 'show' : ''}`}>
                 <ul className='navBarUl'> 
@@ -32,30 +31,30 @@ const NavBar = () => {
                     </li>
                     <li className='navBarLi'>
                         <Link
-                        to='servicios'
-                        smooth={true}
-                        duration={500}
-                        onClick={handleMenuToggle}
+                            to='servicios'
+                            smooth={true}
+                            duration={500}
+                            onClick={handleMenuToggle}
                         >
                             Servicios
                         </Link>
                     </li>
                     <li className='navBarLi'>
                         <Link
-                        to='nosotros'
-                        smooth={true}
-                        duration={500}
-                        onClick={handleMenuToggle}
+                            to='nosotros'
+                            smooth={true}
+                            duration={500}
+                            onClick={handleMenuToggle}
                         >
                             Nosotros
                         </Link>
                     </li>
                     <li className='navBarLi'>
                         <Link
-                        to='contacto'
-                        smooth={true}
-                        duration={500}
-                        onClick={handleMenuToggle}
+                            to='contacto'
+                            smooth={true}
+                            duration={500}
+                            onClick={handleMenuToggle}
                         >
                             Contacto
                         </Link>

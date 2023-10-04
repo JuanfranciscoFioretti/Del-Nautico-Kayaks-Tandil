@@ -26,8 +26,8 @@
 .card-detail {
     display: flex;
     width: 100%;
-    max-width: 550px;
-    height: 215px;
+    max-width: 600px;
+    height: 250px;
     border: 1px solid #ccc;
     border-radius: 16px;
     overflow: hidden;
@@ -45,19 +45,24 @@
     flex: 1;
     padding: 10px;
     align-self: self-start;
-    margin-top: 1.5em;
+    margin-top: 2.5em;
 
-    max-height: 150px; /* Ajusta según necesites */
+    max-height: 200px; /* Ajusta según necesites */
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 6; /* Número de líneas para mostrar */
     -webkit-box-orient: vertical;
+    /* Número de líneas para mostrar */
+    /* -webkit-line-clamp: 6;  */
 }
 
 /* .card-content:hover {
-    max-height: 200px;
-    -webkit-line-clamp: 6;
+    width: 250%;
+} */
+
+/* h6:hover {
+    width: 150%;
+    margin-left: -50%;
 } */
 
 .div-img-container {
@@ -76,34 +81,48 @@
 
 
 .card-img-1 {
-    background-image: url('../../assets/CardsImg/_DSC0030.jpg');
+    background-image: url('../../assets/CardsImg/GOPR3336.jpg');
     height: 100%;
-    transition: max-width 0.9s ease;
+    transition: max-width 1.2s ease-in-out;
 }
 
 .card-img-2 {
-    background-image: url('../../assets/CardsImg/_DSC0024.jpg');
+    background-image: url('../../assets/CardsImg/_DSC0016.jpg');
     height: 100%;
-    transition: max-width 0.9s ease-in-out;
+    transition: max-width 1.2s ease-in-out;
     /* margin-left: 50% !important; */
 }
 
 .card-img-3 {
-    background-image: url('../../assets/CardsImg/BOATS-CUTTED-2jpg.jpg');
+    background-image: url('../../assets/CardsImg/_DSC0125.jpg');
     height: 100%;
-    transition: max-width 0.9s ease;
+    transition: max-width 1.2s ease-in-out;
 }
 
-.expanded-1 {
-    max-width: 250%; /* Cambia el valor según sea necesario */
+
+.card-img-1:hover {
+    max-width: 250%;
+}
+.card-img-2:hover {
+    max-width: 250%;
+}
+.card-img-3:hover {
+    max-width: 250%;
+}
+
+
+/* Cambiar el tamaño de la imagen con un click ( useState ) */
+/* .expanded-1 {
+    max-width: 250%; 
 } 
 .expanded-2 {
-    max-width: 250%; /* Cambia el valor según sea necesario */
-    /* margin-left: 25% !important; */
+    max-width: 250%;
 } 
 .expanded-3 {
-    max-width: 250%; /* Cambia el valor según sea necesario */
-}
+    max-width: 250%;
+} */
+/* Cambiar el tamaño de la imagen con un click ( useState ) */
+
 
 .card-detail-1-y-3 {
     margin-right: 3em;
@@ -117,7 +136,12 @@
     
     .card-content {
         padding: 10px;
-        max-height: 145px;
+        max-height: 300px;
+        margin-top: 3px;
+    }
+
+    .card-detail {
+        width: 330px;
     }
                                                         /* .card-img {
                                                             width: 60%;

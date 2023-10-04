@@ -10,8 +10,9 @@
     z-index: 1001;
     justify-content: space-between;
     align-items: center;
+    height: 11%;
     min-width: 100vw;
-    background-color: #eda24653;
+    background-color: #eda246cb;
     color: #fff;
     padding: 10px;
     margin-bottom: 0;
@@ -20,13 +21,20 @@
 }
 
 .logoContainer {
-    background-size: cover;
+    width: 90px;
+    height: auto;
 }
 
-.logo {
+.navBarLogo {
+    width: 100%;
+    height: 100%;
+    margin-left: 17px;
+}
+
+/* .logo {
     background-image: url('../../assets/LogoImg/logo-definitivo.jpg');
     object-fit: cover;
-}
+} */
 
 .menu {
     display: flex;
@@ -74,15 +82,38 @@
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
+@media (max-width: 830px) {
+
+    .logoContainer {
+        width: 80px;
+        height: auto;
+    }
+}
+
 @media (max-width: 768px) {
+
+    .navBar {
+        height: 60px;
+    }
+    
+    .logoContainer {
+        width: 60px;
+        height: auto;
+    }
+
     .menu {
         display: none;
         flex-direction: column;
+        height: 60px;
         gap: 10px;
     }
 
     .hamburguer {
         display: flex;
+    }
+
+    .line {
+        margin-bottom: 2px;
     }
 }
 
