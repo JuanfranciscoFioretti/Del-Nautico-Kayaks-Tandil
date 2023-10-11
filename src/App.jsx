@@ -16,7 +16,7 @@ import './App.css';
 
 const App = () => {
   return (
-    <div className="App" id='App'>
+    <div className="App" id='App' data-bs-spy="scroll" >
       <NavBar/>
         <LandingImg/>
       <Element name='home'>

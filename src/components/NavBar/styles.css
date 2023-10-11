@@ -4,13 +4,13 @@
     font-family: Arial, Helvetica, sans-serif;
 } */
 
-.navBar {
+/* .navBar {
     display: flex;
     position: fixed;
     z-index: 1001;
     justify-content: space-between;
     align-items: center;
-    height: 11%;
+    height: 8%;
     min-width: 100vw;
     background-color: #eda246cb;
     color: #fff;
@@ -18,17 +18,37 @@
     margin-bottom: 0;
     margin-top: 0;
     padding-right: 3em;
+} */
+
+nav a {
+    color: #fff !important;
+    margin-top: 5px;
+}
+
+#navbar-example2 {
+    background-color: #26272b;
+    border-bottom: 1px solid #ffffff7a;
+    /* background: #eae9e93f;
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255,255,255,0.175); */
+}
+.navbar {
+    height: 4.7em;
+    /* background-color: #eda246cb; */
 }
 
 .logoContainer {
     width: 90px;
-    height: auto;
+    height: 70px;
+    
 }
 
 .navBarLogo {
     width: 100%;
-    height: 100%;
-    margin-left: 17px;
+    height: 120%;
+    margin-left: 4px;
+    margin-top: -20px;
 }
 
 /* .logo {
@@ -122,9 +142,9 @@
 
 .navBarUl {
     display: flex;
-    gap: 2.5rem;
+    gap: 1.5rem;
+    padding-bottom: 17px;
     list-style: none;
-    padding-top: .5em;
 }
 
 li {
@@ -133,7 +153,7 @@ li {
 }
 
 .navBarLi {
-    font-size:1.4em ;
+    font-size:1.2em;
 }
 
 .navBarUl:hover li {
@@ -142,4 +162,8 @@ li {
 
 .navBarUl li:hover {
     filter: blur(0px);
+}
+
+nav a:hover {
+    color: #eda246b0 !important;
 }

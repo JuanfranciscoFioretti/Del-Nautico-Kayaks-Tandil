@@ -1,6 +1,7 @@
 .section-two-columns {
     display: grid;
     grid-template-columns: 50% 50%;
+    margin-top: 5em;
     gap: 20px;
 }
 .left-column {
@@ -35,10 +36,10 @@
     /* height: fit-content; */
 }
 
-.icon {
-    /* height: 15px;
-    width: auto; */
-}
+/* .icon {
+    height: 15px;
+    width: auto;
+} */
 
 
 @media (max-width: 1175px) {
@@ -55,5 +56,11 @@
 
     .divLogoImg {
         margin-left: 20%;
+    }
+}
+
+@media (min-width: 1175px) {
+    .section-two-columns {
+        margin-left: 5em;
     }
 }

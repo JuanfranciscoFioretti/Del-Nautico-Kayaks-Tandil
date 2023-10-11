@@ -4,10 +4,10 @@ import styles from './styles.css';
 
 const CardsActivities = () => {
     return (
-        <section>
+        <section id='Servicios'>
             <div className='section-title'>
                     <h1>Del Náutico Kayaks</h1>
-                    <h3>Conocé las actividades que podés realizar con nosotros</h3>
+                    <p id='aboutActivities'>Conocé las actividades que podés realizar con nosotros</p>
                 </div>
             <div className="cards-container">
                 
@@ -15,19 +15,19 @@ const CardsActivities = () => {
                     <div className="image-overlay">
                         <h2 className='cardsTitles'>Kayaks</h2>
                     </div>
-                    <Button className='card-button' variant="outline-light">Conocer más</Button>
+                    <a href="#Kayaks"><Button className='card-button' variant="outline-light"><p>Conocer más</p></Button></a>
                 </div>
                 <div className="card card-2">
                     <div className="image-overlay">
                         <h2 className='cardsTitles'>Stand up paddle</h2>
                     </div>
-                    <Button className='card-button' variant="outline-light">Conocer más</Button>
+                    <a href="#Standup"><Button className='card-button' variant="outline-light"><p>Conocer más</p></Button></a>
                 </div>
                 <div className="card card-3">
                     <div className="image-overlay">
                         <h2 className='cardsTitles'>Botes a pedal</h2>
                     </div>
-                    <Button className='card-button' variant="outline-light">Conocer más</Button>
+                    <a href="#Botes"><Button className='card-button' variant="outline-light"><p>Conocer más</p></Button></a>
                 </div>
             </div>
         </section>

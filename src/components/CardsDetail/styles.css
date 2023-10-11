@@ -33,7 +33,7 @@
     overflow: hidden;
     
     color: rgb(246, 246, 232);
-    background: rgba(234, 233, 233, 0.249);
+    background: #eae9e93f;
     -webkit-backdrop-filter: blur(6px);
     backdrop-filter: blur(6px);
     border: 1px solid rgba(255,255,255,0.175);
@@ -45,7 +45,7 @@
     flex: 1;
     padding: 10px;
     align-self: self-start;
-    margin-top: 2.5em;
+    margin-top: 1.7em;
 
     max-height: 200px; /* Ajusta según necesites */
     overflow: hidden;
@@ -54,6 +54,11 @@
     -webkit-box-orient: vertical;
     /* Número de líneas para mostrar */
     /* -webkit-line-clamp: 6;  */
+}
+
+.card-content h3 {
+    font-family: 'Staatliches', sans-serif;
+    font-size: 2em;
 }
 
 /* .card-content:hover {

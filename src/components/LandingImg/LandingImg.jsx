@@ -4,7 +4,7 @@ import styles from './styles.css';
 
 const LandingImg = () => {
     return (
-        <header className='header'>
+        <header className='header' id='Home'>
             
         </header>
     )

@@ -1,37 +1,142 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import styles from './styles.css';
+import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2';
+
+// import emailjs from 'emailjs-com';
+// import axios from 'axios';
 
 const ContactForm = () => {
+
+    const form = useRef();
+
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_rz1wkwh', 'template_p6zg59l', form.current, '56WsSw6Y5fcpk1YdC')
+        .then((result) => {
+            // alert("Se ha enviado el mail de forma correcta.");
+            Swal.fire({
+                title: 'Confirmado!',
+                text: 'Su consulta fue enviada de forma correcta.',
+                icon: 'success',
+                confirmButtonText: 'Hecho',
+                allowEscapeKey: true,
+                allowOutsideClick: true,
+                // background: '#eae9e93f',
+                timer: 6000,
+            })
+            console.log(result.text);
+            // setInput('');
+            // setFormData(formData.value(''));
+            // input.value = '';
+        }, (error) => {
+            // alert("Se ha enviado el mail de forma incorrecta.");
+            Swal.fire({
+                title: 'Error!',
+                text: 'El mensaje no fue enviado de forma correcta.',
+                icon: 'error',
+                confirmButtonText: 'Intenta de nuevo',
+                allowEscapeKey: true,
+                allowOutsideClick: true,
+                timer: 6000,
+            })
+            console.log(error.text);
+        });
+    }
+
+    
+    // const [ input, setInput ] = useState('');
+
+    // const [ formData, setFormData ] = useState({
+    //     name: '',
+    //     phone: '',
+    //     email: '',
+    //     message: ''
+    // });
+
+    // const handleChange = (e) => {
+    //     setFormData({ ...formData, [e.target.name]: e.target.value});
+    // };
+
+    //.................................................
+
+    // const handleSubmit = async (e) => {
+    //     e.preventDefault();
+    //     try {
+    //         //PROBAR CON HTTPS acá abajo .
+    //         await axios.post('http://localhost:3001/send-email', formData);
+    //         alert('Correo electrónico enviado correctamente');
+    //         //Acción adicional de limpiar el formulario luego de enviar el correo
+    //         setFormData({
+    //             name: '',
+    //             phone: '',
+    //             email: '',
+    //             message: ''
+    //         });
+    //     } catch (error) {
+    //         console.error(error);
+    //         alert('Error al enviar el correo electrónico');
+    //     }
+    // };
+
     return (
         // <div className='formContainer'>
-            <div className="login-box">
-                <h2>CONTACTO</h2>
-                <form>
+            <div className="login-box" id='Contacto'>
+                <h1>CONTACTO</h1>
+                <form id='form' ref={form} onSubmit={sendEmail}>
                     <div className=''>
                         <div className="user-box">
-                        <input type="text" name="" required=""/>
+                        <input 
+                            type="text" 
+                            name="user_name" 
+                            // value={input}
+                            // value={formData.name}
+                            // onChange={handleChange}
+                            required/>
                         <label>Nombre</label>
                         </div>
                         <div className="user-box">
-                        <input type="text" name="" required=""/>
+                        <input
+                            type="number" 
+                            name="user_phone"
+                            // value={formData.phone}
+                            // onChange={handleChange}
+                            required
+                            />
                         <label>Teléfono</label>
                         </div>
                     </div>
                     <div className="user-box">
-                    <input type="mail" name="" required=""/>
+                    <input 
+                        type="mail" 
+                        name="user_email"
+                        autoComplete='off'
+                        // value={formData.email}
+                        // onChange={handleChange}
+                        required/>
                     <label>Email</label>
                     </div>
                     <div className="user-box">
-                    <input type="text" name="" required=""/>
+                        {/* <textarea name="message" cols="60" rows="5"/> */}
+                    <input 
+                        type="text" 
+                        name="message"
+                        // value={formData.message}
+                        // onChange={handleChange}
+                        required
+                        />
                     <label>Deje su consulta</label>
                     </div>
-                    <a href="#">
+                    <button id='button-submit' type='submit'>
+                    
                     <span></span>
                     <span></span>
                     <span></span>
                     <span></span>
-                    Enviar
-                    </a>
+                        <p>Enviar</p>
+                    </button>
                 </form>
             </div>
         // </div>
@@ -39,61 +144,3 @@ const ContactForm = () => {
 }
 
 export default ContactForm;
-
-
-
-
-
-// <!-- Site footer -->
-// <footer class="site-footer">
-//   <div class="container">
-//     <div class="row">
-//       <div class="col-sm-12 col-md-6">
-//         <h6>About</h6>
-//         <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
-//       </div>
-
-//       <div class="col-xs-6 col-md-3">
-//         <h6>Categories</h6>
-//         <ul class="footer-links">
-//           <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
-//           <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
-//           <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
-//           <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
-//           <li><a href="http://scanfcode.com/category/android/">Android</a></li>
-//           <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
-//         </ul>
-//       </div>
-
-//       <div class="col-xs-6 col-md-3">
-//         <h6>Quick Links</h6>
-//         <ul class="footer-links">
-//           <li><a href="http://scanfcode.com/about/">About Us</a></li>
-//           <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
-//           <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
-//           <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
-//           <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
-//         </ul>
-//       </div>
-//     </div>
-//     <hr>
-//   </div>
-//   <div class="container">
-//     <div class="row">
-//       <div class="col-md-8 col-sm-6 col-xs-12">
-//         <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
-//      <a href="#">Scanfcode</a>.
-//         </p>
-//       </div>
-
-//       <div class="col-md-4 col-sm-6 col-xs-12">
-//         <ul class="social-icons">
-//           <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-//           <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-//           <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-//           <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
-//         </ul>
-//       </div>
-//     </div>
-//   </div>
-// </footer>

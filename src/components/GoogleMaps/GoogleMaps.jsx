@@ -13,9 +13,9 @@ const GoogleMaps = () => {
                 <div className='divLogoImg'>
                     
                 </div>
-                <button className='destiny-button'>Como llegar</button>
+                {/* <button className='destiny-button'>Como llegar</button>
                 
-                <i class="bi bi-whatsapp"/>
+                <i class="bi bi-whatsapp"/> */}
                 
             </div>
         </section>

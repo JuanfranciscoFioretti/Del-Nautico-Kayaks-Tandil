@@ -28,6 +28,9 @@ const Footer = () => {
               <li>
                 Club Náutico Tandil - Acceso por DAM Beach
               </li>
+              <li>
+                También encontranos en Instagram <a target='_BLANK' href="https://www.instagram.com/delnauticokayak/">@delnauticokayak</a>
+              </li>
             </ul>
           </div>
 
@@ -47,43 +50,27 @@ const Footer = () => {
             <h6>Links</h6>
             <ul className="footer-links">
               <li>
-                  <Link
-                    to='home'
-                    smooth={true}
-                    duration={500}
-                    onClick={handleMenuToggle}>
-                      Home
-                  </Link>
+                <a href="#Home">
+                  Home
+                </a>
                 {/* <a className='aFooterInfo' href="http://scanfcode.com/category/front-end-development/">(2494) - 582076</a> */}
               </li>
               <li>
-                  <Link
-                    to='home'
-                    smooth={true}
-                    duration={500}
-                    onClick={handleMenuToggle}>
-                      Servicios
-                  </Link>
+                <a href="#Servicios">
+                  Servicios
+                </a>
                 {/* <a className='aFooterInfo' href="http://scanfcode.com/category/front-end-development/">(2494) - 582076</a> */}
               </li>
               <li>
-                  <Link
-                    to='home'
-                    smooth={true}
-                    duration={500}
-                    onClick={handleMenuToggle}>
-                      Nosotros
-                  </Link>
+                <a href="#Nosotros">
+                  Nosotros
+                </a>
                 {/* <a className='aFooterInfo' href="http://scanfcode.com/category/front-end-development/">(2494) - 582076</a> */}
               </li>
               <li>
-                  <Link
-                    to='home'
-                    smooth={true}
-                    duration={500}
-                    onClick={handleMenuToggle}>
-                      Contacto
-                  </Link>
+                <a href="#Contacto">
+                  Contacto
+                </a>
                 {/* <a className='aFooterInfo' href="http://scanfcode.com/category/front-end-development/">(2494) - 582076</a> */}
               </li>
             </ul>

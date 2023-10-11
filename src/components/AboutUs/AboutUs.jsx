@@ -4,8 +4,8 @@ import styles from './styles.css';
 
 const AboutUs = () => {
     return (
-        <section className='section-container'>
-            <h2 className='sectionTitle'>Nosotros</h2>
+        <section className='section-container' id='Nosotros'>
+            <h1 className='sectionTitle'>Nosotros</h1>
             <p className='sectionText'>
             Somos un club deportivo, inicialmente dedicado a la práctica de kayak 
             y también de Stand up paddle y botes a pedal.
