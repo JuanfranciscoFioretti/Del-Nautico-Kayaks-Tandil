@@ -1,5 +1,6 @@
 import React from 'react';
 import { Element } from 'react-scroll';
+import 'animate.css';
 // import 'swiper/css/swiper.css';
 import NavBar from './components/NavBar/NavBar';
 import LandingImg from './components/LandingImg/LandingImg';

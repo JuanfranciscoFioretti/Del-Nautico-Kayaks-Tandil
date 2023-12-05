@@ -1,12 +1,13 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
+import 'animate.css';
 import styles from './styles.css';
 
 const CardsActivities = () => {
     return (
         <section id='Servicios'>
             <div className='section-title'>
-                    <h1>Del Náutico Kayaks</h1>
+                    <h1 id='animatedH1' className='animate__animated animate__fadeInUp'>Del Náutico Kayaks</h1>
                     <p id='aboutActivities'>Conocé las actividades que podés realizar con nosotros</p>
                 </div>
             <div className="cards-container">

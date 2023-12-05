@@ -7,6 +7,12 @@
     font-family: sans-serif;
     background: linear-gradient(#141e30, #243b55);
   } */
+
+  input[type=number]::-webkit-inner-spin-button, 
+  input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+  }
   
   .login-box {
     position: relative;
@@ -18,13 +24,14 @@
     margin-top: 5em;
     margin-bottom: 5em;
     transform: translate(-50%, -50%);
-    background-color: #3f4044;
+    background-color: #443f3f;
     box-sizing: border-box;
     box-shadow: 0 10px 17px rgba(135, 108, 83, 0.363);
     border-radius: 32px;
   }
   
   .login-box h1 {
+    /* background-color: #4e3a3ab2; */
     margin: 0 0 30px;
     padding: 0;
     color: #fff;

@@ -1,4 +1,20 @@
-.carrousel-section {
+
+#carouselExample img {
+    height: 900px;
+}
+
+.carousel {
+    border: 0px solid #369;
+    width: 100%;
+    justify-content: center;
+    /* background: linear-gradient(to left, rgba(0, 0, 0, 0.5), transparent); */
+    /* background-color: rgb(27, 25, 25); */
+    /* border: 0px solid #369 !important; */
+    /* width: 80vw; */
+}
+
+
+/* .carrousel-section {
     width: 100vw;
     justify-self: center;
     height: 100%;
@@ -6,34 +22,44 @@
     padding-bottom: 5em;
     border: 0px solid #369;
     background-color: rgb(27, 25, 25);
-}
-
-.carousel {
-    /* border: 0px solid #369 !important; */
-    background-color: rgb(27, 25, 25);
-    border: 0px solid #369;
-}
+} */
 
 /* .carousel:hover {
     border: .1px solid red !important;
 } */
 
-.carousel:active {
-    /* border: 0px solid #369 !important; */
+/* .carousel:active {
+    border: 0px solid #369 !important;
     border: .5px solid red !important;
-}
+} */
 
 /* border: 0px solid #369 !important; */
 /* .carousel:active {
     border: 5px solid rgb(51, 153, 73) !important;
 } */
 
-.carrousel-img {
+/* .carrousel-img {
     width: 350px;
     height: 350px;
-}
+} */
 
-.carrouselImg1 {
+
+/* @media (max-width: 900px) {
+
+    .carrousel {
+        width: 80%;
+        justify-content: center;
+    }
+} */
+
+
+
+
+
+
+
+
+/* .carrouselImg1 {
     background-image: url('../../assets/CardsImg/_DSC0016.jpg');
     background-size: cover;
     background-position: center;
@@ -69,4 +95,4 @@
     background-image: url('../../assets/CardsImg/_DSC0019.jpg');
     background-size: cover;
     background-position: center;
-}
+} */

@@ -38,7 +38,6 @@
 // };
 
 // export default CustomizedComponent;
-  
 
 
 
@@ -52,16 +51,111 @@
 
 
 import React from 'react';
-import Flickity from 'react-flickity-component'
+// import Flickity from 'react-flickity-component';
 import styles from './styles.css';
+import * as bootstrap from 'bootstrap';
 
-const flickityOptions = {
-    initialIndex: 2
-}
+import imagen1 from '../../assets/CAROUSEL FAV/_DSC0051.jpg';
+import imagen2 from '../../assets/CAROUSEL FAV/_DSC0155.jpg';
+import imagen3 from '../../assets/CAROUSEL FAV/DJI_0007-Pano.jpg';
+import imagen4 from '../../assets/CAROUSEL FAV/_DSC0133.jpg';
+import imagen5 from '../../assets/CAROUSEL FAV/_DSC0052.jpg';
+import imagen6 from '../../assets/CAROUSEL FAV/DJI_0011-Pano.jpg';
+import imagen7 from '../../assets/CAROUSEL FAV/_DSC0084.jpg';
+import imagen8 from '../../assets/CAROUSEL FAV/_DSC0136.jpg';
+
+// const flickityOptions = {
+//     initialIndex: 2
+// }
 
 const Carrousel = () => {
     return (
-        <section className='carrousel-section'>
+        <div id="carouselExample" data-bs-ride="carousel" className="carousel slide">
+            <div className="carousel-inner" data-bs-ride="carousel">
+                <div className="carousel-item active">
+                <img src={imagen1} class="d-block w-100 h-60" alt="Familia en el bote a pedal"/>
+                </div>
+                <div className="carousel-item">
+                <img src={imagen2} class="d-block w-100 h-60" alt="Profesor enseñando medidas de seguridad"/>
+                </div>
+                <div className="carousel-item">
+                <img src={imagen3} class="d-block w-100 h-60" alt="Imágen panorámica de Tandil"/>
+                </div>
+                <div className="carousel-item">
+                <img src={imagen4} class="d-block w-100 h-60" alt="Lago de tandil y su géiser"/>
+                </div>
+                <div className="carousel-item">
+                <img src={imagen5} class="d-block w-100 h-60" alt="Familia en el bote a pedal"/>
+                </div>
+                <div className="carousel-item">
+                <img src={imagen6} class="d-block w-100 h-60" alt="Imágen panorámica de Tandil"/>
+                </div>
+                <div className="carousel-item">
+                <img src={imagen7} class="d-block w-100 h-60" alt="Profesor realizando kayak"/>
+                </div>
+                <div className="carousel-item">
+                <img src={imagen8} class="d-block w-100 h-60" alt="Géiser de Tandil junto a un bote a pedal"/>
+                </div>
+            </div>
+            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span className="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    );
+}
+
+export default Carrousel;
+
+
+
+
+// .........................................................
+// ESTO ES USANDO REACT-BOOTSTRAP
+
+        {/* <div id="carouselExampleFade" className="carousel slide carousel-fade">
+            <div className="carousel-inner">
+                <div className="carousel-item">
+                <img src={imagen1} className="d-block w-100 h-60" alt="..."/>
+                </div>
+                <div clasNames="carousel-item">
+                <img src={imagen2} className="d-block w-100  h-60" alt="..."/>
+                </div>
+                <div className="carousel-item">
+                <img src={imagen3} className="d-block w-100 h-60" alt="..."/>
+                </div>
+                <div className="carousel-item">
+                <img src={imagen4} className="d-block w-100 h-60" alt="..."/>
+                </div>
+                <div className="carousel-item">
+                <img src={imagen5} className="d-block w-100 h-60" alt="..."/>
+                </div>
+                <div className="carousel-item">
+                <img src={imagen6} className="d-block w-100 h-60" alt="..."/>
+                </div>
+            </div>
+            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span className="visually-hidden">Previous</span>
+            </button>
+            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                <span className="visually-hidden">Next</span>
+            </button>
+        </div> */}
+
+
+
+// .........................................................
+// ESTO ES USANDO REACT-FLICKITY
+
+{/* // ..... CARROUSEL FUNCIONAL EL DE ABAJO - */}
+
+        {/* <section className='carrousel-section'>
             <Flickity
                 className={'carousel'} // default ''
                 elementType={'div'} // default 'div'
@@ -79,17 +173,7 @@ const Carrousel = () => {
                 <div className="carrouselImg7 carrousel-img "></div>
             </Flickity>
             
-        </section>
-        )
-}
-
-export default Carrousel;
-
-
-
-
-
-
+        </section> */}
 
 
 // .........................................................

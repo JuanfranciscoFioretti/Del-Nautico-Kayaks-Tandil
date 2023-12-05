@@ -24,10 +24,17 @@ const ContactForm = () => {
                 confirmButtonText: 'Hecho',
                 allowEscapeKey: true,
                 allowOutsideClick: true,
-                // background: '#eae9e93f',
                 timer: 6000,
+                backdrop: '#445938b1',
             })
             console.log(result.text);
+            setFormData({
+                name: '',
+                phone: '',
+                email: '',
+                message: ''
+            });
+            
             // setInput('');
             // setFormData(formData.value(''));
             // input.value = '';
@@ -41,6 +48,7 @@ const ContactForm = () => {
                 allowEscapeKey: true,
                 allowOutsideClick: true,
                 timer: 6000,
+                backdrop: '#4e3a3ab2',
             })
             console.log(error.text);
         });
@@ -49,16 +57,18 @@ const ContactForm = () => {
     
     // const [ input, setInput ] = useState('');
 
-    // const [ formData, setFormData ] = useState({
-    //     name: '',
-    //     phone: '',
-    //     email: '',
-    //     message: ''
-    // });
+    const [ formData, setFormData ] = useState({
+        name: '',
+        phone: '',
+        email: '',
+        message: ''
+    });
 
-    // const handleChange = (e) => {
-    //     setFormData({ ...formData, [e.target.name]: e.target.value});
-    // };
+    const handleChange = (e) => {
+        setFormData('');
+        // setFormData({ ...formData, [e.target.name]: e.target.value});
+    };
+    
 
     //.................................................
 
@@ -92,20 +102,24 @@ const ContactForm = () => {
                             type="text" 
                             name="user_name" 
                             // value={input}
-                            // value={formData.name}
-                            // onChange={handleChange}
+                            value={formData.name}
+                            onChange={handleChange}
+                            autocomplete="off"
                             required/>
                         <label>Nombre</label>
                         </div>
                         <div className="user-box">
+        {/* .......... ELIMINAR EL NUMBER PICKER ....... */}
                         <input
                             type="number" 
                             name="user_phone"
-                            // value={formData.phone}
-                            // onChange={handleChange}
+                            value={formData.phone}
+                            onChange={handleChange}
+                            autocomplete="off"
                             required
                             />
                         <label>Teléfono</label>
+        {/* .......... ELIMINAR EL NUMBER PICKER ....... */}
                         </div>
                     </div>
                     <div className="user-box">
@@ -113,8 +127,9 @@ const ContactForm = () => {
                         type="mail" 
                         name="user_email"
                         autoComplete='off'
-                        // value={formData.email}
-                        // onChange={handleChange}
+                        value={formData.email}
+                        onChange={handleChange}
+                        autocomplete="off"
                         required/>
                     <label>Email</label>
                     </div>
@@ -123,8 +138,9 @@ const ContactForm = () => {
                     <input 
                         type="text" 
                         name="message"
-                        // value={formData.message}
-                        // onChange={handleChange}
+                        value={formData.message}
+                        onChange={handleChange}
+                        autocomplete="off"
                         required
                         />
                     <label>Deje su consulta</label>

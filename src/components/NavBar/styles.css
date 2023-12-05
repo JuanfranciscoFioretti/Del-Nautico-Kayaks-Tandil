@@ -39,8 +39,8 @@ nav a {
 }
 
 .logoContainer {
-    width: 90px;
-    height: 70px;
+    width: 89.5px;
+    height: 68.5px;
     
 }
 
@@ -149,7 +149,7 @@ nav a {
 
 li {
     display: block;
-    transition: .5s;
+    transition: 1.8s;
 }
 
 .navBarLi {

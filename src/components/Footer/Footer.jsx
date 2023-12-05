@@ -89,7 +89,7 @@ const Footer = () => {
             <ul className="social-icons">
               {/* <li><a className="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
               <li><a className="twitter" href="#"><i class="fa fa-twitter"></i></a></li> */}
-              <li><a className="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a className="dribbble" target='_BLANK' href="https://www.instagram.com/greencoding_/"><i class="fa fa-dribbble"></i></a></li>
               {/* <li><a className="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>    */}
             </ul>
           </div>
