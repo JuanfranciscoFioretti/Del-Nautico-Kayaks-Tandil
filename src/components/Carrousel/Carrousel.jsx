@@ -51,9 +51,8 @@
 
 
 import React from 'react';
-// import Flickity from 'react-flickity-component';
+import { CCarousel, CCarouselItem, CImage } from '@coreui/react';
 import styles from './styles.css';
-import * as bootstrap from 'bootstrap';
 
 import imagen1 from '../../assets/CAROUSEL FAV/_DSC0051.jpg';
 import imagen2 from '../../assets/CAROUSEL FAV/_DSC0155.jpg';
@@ -64,49 +63,57 @@ import imagen6 from '../../assets/CAROUSEL FAV/DJI_0011-Pano.jpg';
 import imagen7 from '../../assets/CAROUSEL FAV/_DSC0084.jpg';
 import imagen8 from '../../assets/CAROUSEL FAV/_DSC0136.jpg';
 
-// const flickityOptions = {
-//     initialIndex: 2
-// }
-
 const Carrousel = () => {
+    const [activeIndex, setActiveIndex] = React.useState(0);
+    const [isPaused, setIsPaused] = React.useState(false);
+    const totalSlides = 8;
+
+    React.useEffect(() => {
+        if (isPaused) return;
+
+        const interval = setInterval(() => {
+            setActiveIndex((prevIndex) => (prevIndex + 1) % totalSlides);
+        }, 3500);
+
+        return () => clearInterval(interval);
+    }, [isPaused, totalSlides]);
+    
     return (
-        <div id="carouselExample" data-bs-ride="carousel" className="carousel slide">
-            <div className="carousel-inner" data-bs-ride="carousel">
-                <div className="carousel-item active">
-                <img src={imagen1} class="d-block w-100 h-60" alt="Familia en el bote a pedal"/>
-                </div>
-                <div className="carousel-item">
-                <img src={imagen2} class="d-block w-100 h-60" alt="Profesor enseñando medidas de seguridad"/>
-                </div>
-                <div className="carousel-item">
-                <img src={imagen3} class="d-block w-100 h-60" alt="Imágen panorámica de Tandil"/>
-                </div>
-                <div className="carousel-item">
-                <img src={imagen4} class="d-block w-100 h-60" alt="Lago de tandil y su géiser"/>
-                </div>
-                <div className="carousel-item">
-                <img src={imagen5} class="d-block w-100 h-60" alt="Familia en el bote a pedal"/>
-                </div>
-                <div className="carousel-item">
-                <img src={imagen6} class="d-block w-100 h-60" alt="Imágen panorámica de Tandil"/>
-                </div>
-                <div className="carousel-item">
-                <img src={imagen7} class="d-block w-100 h-60" alt="Profesor realizando kayak"/>
-                </div>
-                <div className="carousel-item">
-                <img src={imagen8} class="d-block w-100 h-60" alt="Géiser de Tandil junto a un bote a pedal"/>
-                </div>
-            </div>
-            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    );
+        <CCarousel 
+            controls 
+            indicators
+            transition="crossfade"
+            activeIndex={activeIndex}
+            onSlide={(index) => setActiveIndex(index)}
+            onMouseEnter={() => setIsPaused(true)}
+            onMouseLeave={() => setIsPaused(false)}
+        >
+            <CCarouselItem>
+                <CImage className="d-block w-100 carrousel-img" src={imagen1} alt="Familia en el bote a pedal" />
+            </CCarouselItem>
+            <CCarouselItem>
+                <CImage className="d-block w-100 carrousel-img" src={imagen2} alt="Profesor enseñando medidas de seguridad" />
+            </CCarouselItem>
+            <CCarouselItem>
+                <CImage className="d-block w-100 carrousel-img" src={imagen3} alt="Imágen panorámica de Tandil" />
+            </CCarouselItem>
+            <CCarouselItem>
+                <CImage className="d-block w-100 carrousel-img" src={imagen4} alt="Lago de tandil y su géiser" />
+            </CCarouselItem>
+            <CCarouselItem>
+                <CImage className="d-block w-100 carrousel-img" src={imagen5} alt="Familia en el bote a pedal" />
+            </CCarouselItem>
+            <CCarouselItem>
+                <CImage className="d-block w-100 carrousel-img" src={imagen6} alt="Imágen panorámica de Tandil" />
+            </CCarouselItem>
+            <CCarouselItem>
+                <CImage className="d-block w-100 carrousel-img" src={imagen7} alt="Profesor realizando kayak" />
+            </CCarouselItem>
+            <CCarouselItem>
+                <CImage className="d-block w-100 carrousel-img" src={imagen8} alt="Géiser de Tandil junto a un bote a pedal" />
+            </CCarouselItem>
+        </CCarousel>
+    )
 }
 
 export default Carrousel;

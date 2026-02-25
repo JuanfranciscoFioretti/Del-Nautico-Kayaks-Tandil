@@ -46,19 +46,43 @@
     padding: 10px;
     align-self: self-start;
     margin-top: 1.7em;
-
-    max-height: 200px; /* Ajusta según necesites */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 200px;
     overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    /* Número de líneas para mostrar */
-    /* -webkit-line-clamp: 6;  */
+    transform: translateX(-25%);
+    transition: align-items 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), justify-content 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.card-content.hovering {
+    transition: align-items 2.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), justify-content 2.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 2.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    align-items: flex-start;
+    justify-content: flex-start;
+    transform: translateX(0);
 }
 
 .card-content h3 {
     font-family: 'Staatliches', sans-serif;
     font-size: 2em;
+    text-align: center;
+    transition: text-align 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.card-content.hovering h3 {
+    transition: text-align 2.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    text-align: left;
+}
+
+.card-content p {
+    text-align: center;
+    transition: text-align 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.card-content.hovering p {
+    transition: text-align 2.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    text-align: left;
 }
 
 /* .card-content:hover {
@@ -81,37 +105,29 @@
     max-width: 50%;
     height: auto;
     background-size: cover;
-    /* transition: max-width 0.9s ease; */
+    transition: max-width 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
+.card-img.hovering {
+    transition: max-width 2.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
 
 .card-img-1 {
     background-image: url('../../assets/CardsImg/GOPR3336.jpg');
     height: 100%;
-    transition: max-width 1.2s ease-in-out;
 }
 
 .card-img-2 {
     background-image: url('../../assets/CardsImg/_DSC0016.jpg');
     height: 100%;
-    transition: max-width 1.2s ease-in-out;
-    /* margin-left: 50% !important; */
 }
 
 .card-img-3 {
     background-image: url('../../assets/CardsImg/_DSC0125.jpg');
     height: 100%;
-    transition: max-width 1.2s ease-in-out;
 }
 
-
-.card-img-1:hover {
-    max-width: 250%;
-}
-.card-img-2:hover {
-    max-width: 250%;
-}
-.card-img-3:hover {
+.card-img.hovering {
     max-width: 250%;
 }
 

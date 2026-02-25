@@ -29,7 +29,10 @@ const Footer = () => {
                 Club Náutico Tandil - Acceso por DAM Beach
               </li>
               <li>
-                También encontranos en Instagram <a target='_BLANK' href="https://www.instagram.com/delnauticokayak/">@delnauticokayak</a>
+                También encontranos en Instagram <a className="instagram-link" target='_BLANK' href="https://www.instagram.com/delnauticokayak/">@delnauticokayak</a>
+              </li>
+              <li>
+                Y en Facebook <a className="facebook-link" target='_BLANK' href="https://www.facebook.com/delnauticokayak">@delnauticokayak</a>
               </li>
             </ul>
           </div>
@@ -76,12 +79,20 @@ const Footer = () => {
             </ul>
           </div>
         </div>
+        <div className="row">
+          <div className="col-md-12">
+            <ul className="social-icons-footer">
+              <li><a className="facebook-social" target='_BLANK' href="https://www.facebook.com/delnauticokayak"><i className="fa fa-facebook"></i></a></li>
+              <li><a className="instagram-social" target='_BLANK' href="https://www.instagram.com/delnauticokayak/"><i className="fa fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
         <hr/>
       </div>
       <div className="container">
         <div className="row">
           <div className="col-md-8 col-sm-6 col-xs-12">
-            <p className="copyright-text">Desarrollo: Greencoding &copy; 2023 Derechos reservados por <a href="https://www.instagram.com/greencoding_/" target='_BLANK'>Greencoding</a>.
+            <p className="copyright-text">Desarrollo: Sostentia &copy; 2026 Derechos reservados por <a href="https://sostentia.com/" target='_BLANK'>Sostentia</a>.
             </p>
           </div>
 
@@ -89,7 +100,7 @@ const Footer = () => {
             <ul className="social-icons">
               {/* <li><a className="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
               <li><a className="twitter" href="#"><i class="fa fa-twitter"></i></a></li> */}
-              <li><a className="dribbble" target='_BLANK' href="https://www.instagram.com/greencoding_/"><i class="fa fa-dribbble"></i></a></li>
+              <li><a className="instagram" target='_BLANK' href="https://www.instagram.com/sostentia/"><i className="fa fa-instagram"></i></a></li>
               {/* <li><a className="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>    */}
             </ul>
           </div>

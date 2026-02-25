@@ -1,16 +1,62 @@
 
-#carouselExample img {
-    height: 900px;
-}
-
 .carousel {
-    border: 0px solid #369;
     width: 100%;
     justify-content: center;
-    /* background: linear-gradient(to left, rgba(0, 0, 0, 0.5), transparent); */
-    /* background-color: rgb(27, 25, 25); */
-    /* border: 0px solid #369 !important; */
-    /* width: 80vw; */
+    position: relative;
+}
+
+.carrousel-img {
+    height: 900px;
+    object-fit: cover;
+}
+
+/* Estilos para los controles del carousel de CoreUI */
+.carousel-control-prev,
+.carousel-control-next {
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
+}
+
+/* Estilos para los indicadores centrados */
+.carousel-indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+    z-index: 15;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    width: fit-content;
+    background: transparent;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin: 0 !important;
+    margin-bottom: 30px !important;
+}
+
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0;
+}
+
+.carousel-indicators button.active {
+    background-color: rgba(255, 255, 255, 1);
+    border-color: white;
+    width: 14px;
+    height: 14px;
 }
 
 
