@@ -1,7 +1,6 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import 'animate.css';
-import styles from './styles.css';
 
 const CardsActivities = () => {
     return (

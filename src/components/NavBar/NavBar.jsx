@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-scroll';
-import styles from './styles.css';
 import Logo from '../../assets/LogoImg/logo-definitivo-no-background.png'
 import WaterIcon from './WaterIcon';
 
@@ -22,22 +20,19 @@ const NavBar = () => {
 
     useEffect(() => {
         if (showMenu) {
-            // Guardar la posición actual
-            const scrollY = parseInt(window.getComputedStyle(document.body).getPropertyValue('--scroll-y')) || 0;
-            
             // Deshabilitar scroll fijando el body
             document.body.style.position = 'fixed';
             document.body.style.top = `-${window.scrollY}px`;
             document.body.style.width = '100%';
         } else {
             // Restaurar scroll
-            const scrollY = parseInt(document.body.style.top || '0') * -1;
+            const scrollYPos = parseInt(document.body.style.top || '0') * -1;
             document.body.style.position = '';
             document.body.style.top = '';
             document.body.style.width = '';
             
-            if (scrollY) {
-                window.scrollTo(0, scrollY);
+            if (scrollYPos) {
+                window.scrollTo(0, scrollYPos);
             }
         }
 
@@ -52,11 +47,10 @@ const NavBar = () => {
         <>
             <nav id="navbar-example2" className={`navbar px-5 ${showMenu ? 'hidden' : ''}`}>
                 <div className="logoContainer">
-                    <a href="#" onClick={handleLogoClick}>
-                        <img className='navBarLogo' src={Logo} alt="" />
-                    </a>
+                    <button type="button" onClick={handleLogoClick} className="logo-button">
+                        <img className='navBarLogo' src={Logo} alt="Logo Del Náutico Kayaks" />
+                    </button>
                 </div>
-                <a className="navbar-brand" href="#" onClick={handleLogoClick}></a>
                 <ul className="nav nav-pills navBarUl">
                     <li className="nav-item navBarLi">
                         <a className="nav-link" href="#Servicios"><p>Servicios</p></a>

@@ -1,14 +1,7 @@
 import React, { useState } from 'react';
-import styles from './styles.css';
-import { Link } from 'react-scroll';
 
 const Footer = () => {
   const [ showMenu, setShowMenu ] = useState(false);
-    
-    const handleMenuToggle = () => {
-        setShowMenu(!showMenu);
-        console.log(showMenu);
-    };
     return (
         <div>
               {/* <!-- Site footer --> */}
@@ -29,10 +22,10 @@ const Footer = () => {
                 Club Náutico Tandil - Acceso por DAM Beach
               </li>
               <li>
-                También encontranos en Instagram <a className="instagram-link" target='_BLANK' href="https://www.instagram.com/delnauticokayak/">@delnauticokayak</a>
+                También encontranos en Instagram <a className="instagram-link" target='_blank' rel="noreferrer" href="https://www.instagram.com/delnauticokayak/">@delnauticokayak</a>
               </li>
               <li>
-                Y en Facebook <a className="facebook-link" target='_BLANK' href="https://www.facebook.com/delnauticokayak">@delnauticokayak</a>
+                Y en Facebook <a className="facebook-link" target='_blank' rel="noreferrer" href="https://www.facebook.com/delnauticokayak">@delnauticokayak</a>
               </li>
             </ul>
           </div>
