@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
 const Footer = () => {
-  const [ showMenu, setShowMenu ] = useState(false);
     return (
         <div>
               {/* <!-- Site footer --> */}
@@ -75,8 +74,8 @@ const Footer = () => {
         <div className="row">
           <div className="col-md-12">
             <ul className="social-icons-footer">
-              <li><a className="facebook-social" target='_BLANK' href="https://www.facebook.com/delnauticokayak"><i className="fa fa-facebook"></i></a></li>
-              <li><a className="instagram-social" target='_BLANK' href="https://www.instagram.com/delnauticokayak/"><i className="fa fa-instagram"></i></a></li>
+              <li><a className="facebook-social" target='_blank' rel="noreferrer" href="https://www.facebook.com/delnauticokayak"><i className="fa fa-facebook"></i></a></li>
+              <li><a className="instagram-social" target='_blank' rel="noreferrer" href="https://www.instagram.com/delnauticokayak/"><i className="fa fa-instagram"></i></a></li>
             </ul>
           </div>
         </div>
@@ -85,7 +84,7 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-8 col-sm-6 col-xs-12">
-            <p className="copyright-text">Desarrollo: Sostentia &copy; 2026 Derechos reservados por <a href="https://sostentia.com/" target='_BLANK'>Sostentia</a>.
+            <p className="copyright-text">Desarrollo: Sostentia &copy; 2026 Derechos reservados por <a href="https://sostentia.com/" target='_blank' rel="noreferrer">Sostentia</a>.
             </p>
           </div>
 
@@ -93,7 +92,7 @@ const Footer = () => {
             <ul className="social-icons">
               {/* <li><a className="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
               <li><a className="twitter" href="#"><i class="fa fa-twitter"></i></a></li> */}
-              <li><a className="instagram" target='_BLANK' href="https://www.instagram.com/sostentia/"><i className="fa fa-instagram"></i></a></li>
+              <li><a className="instagram" target='_blank' rel="noreferrer" href="https://www.instagram.com/sostentia/"><i className="fa fa-instagram"></i></a></li>
               {/* <li><a className="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>    */}
             </ul>
           </div>
