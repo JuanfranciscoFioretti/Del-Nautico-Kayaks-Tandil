@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import WaterIcon from './WaterIcon';
-
-const Logo = '/assets/LogoImg/logo-definitivo-no-background.png';
+import './styles.css';
+import Logo from '../../assets/LogoImg/logo-definitivo-no-background.png';
 
 const NavBar = () => {
     const [ showMenu, setShowMenu ] = useState(false);

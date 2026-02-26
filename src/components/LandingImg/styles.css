@@ -2,7 +2,7 @@
     position: relative;
     min-height: 100vh;
     /* background-image: url('../../assets/HeaderImg/HeaderImgShorter.jpg'); */
-    background-image: url('/assets/BigImgs/_DSC0056.jpg');
+    background-image: url('../../assets/BigImgs/_DSC0056.jpg');
     background-size: cover;
     background-position: center;
 }

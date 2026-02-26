@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
+import './styles.css';
 
 // import emailjs from 'emailjs-com';
 // import axios from 'axios';

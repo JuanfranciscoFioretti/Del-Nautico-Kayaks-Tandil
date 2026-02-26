@@ -16,7 +16,7 @@
 } */
 
 .divLogoImg {
-    background-image: url('/assets/LogoImg/DEL\ NAUTICO\ KAYAKS\ \ DEFINITIVO\ -\ LOGO\ -\ JPG\ RECORTADO\ .jpg');
+    background-image: url('../../assets/LogoImg/logo-definitivo.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     position: relative;

@@ -107,15 +107,15 @@ section h2 {
 }
 
 .card-1 {
-    background-image: url('/assets/CardsImg/GOPR3336.jpg');
+    background-image: url('../../assets/CardsImg/GOPR3336.jpg');
 }
 
 .card-2 {
-    background-image: url('/assets/CardsImg/STANDUP-PADDLE-CUTTED.jpg');
+    background-image: url('../../assets/CardsImg/STANDUP-PADDLE-CUTTED.jpg');
 }
 
 .card-3 {
-    background-image: url('/assets/CardsImg/BOATS-CUTTED-3jpg.jpg');
+    background-image: url('../../assets/CardsImg/BOATS-CUTTED-3jpg.jpg');
 }
 
 
