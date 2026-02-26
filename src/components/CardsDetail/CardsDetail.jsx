@@ -27,7 +27,7 @@ const CardsDetail = () => {
 
     return (
         <div className='cards-detail-container'>
-            <div className='card-detail card-detail-1-y-3' id='Kayaks' onMouseEnter={() => setCard1Hovering(true)} onMouseLeave={() => setCard1Hovering(false)}>
+           <div className='card-detail card-detail-1-y-3' id='Kayaks' onMouseEnter={() => setCard1Hovering(true)} onMouseLeave={() => setCard1Hovering(false)}>
                 <div className="div-img-container" onClick={handleImage1Click}>
                     <div className={`card-img card-img-1 ${card1Hovering ? 'hovering' : ''} ${image1Clicked ? 'expanded-1' : ''}`}></div>
                 </div>

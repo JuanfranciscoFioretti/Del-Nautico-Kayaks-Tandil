@@ -53,14 +53,14 @@
 import React from 'react';
 import { CCarousel, CCarouselItem, CImage } from '@coreui/react';
 
-import imagen1 from '../../assets/CAROUSEL FAV/_DSC0051.jpg';
-import imagen2 from '../../assets/CAROUSEL FAV/_DSC0155.jpg';
-import imagen3 from '../../assets/CAROUSEL FAV/DJI_0007-Pano.jpg';
-import imagen4 from '../../assets/CAROUSEL FAV/_DSC0133.jpg';
-import imagen5 from '../../assets/CAROUSEL FAV/_DSC0052.jpg';
-import imagen6 from '../../assets/CAROUSEL FAV/DJI_0011-Pano.jpg';
-import imagen7 from '../../assets/CAROUSEL FAV/_DSC0084.jpg';
-import imagen8 from '../../assets/CAROUSEL FAV/_DSC0136.jpg';
+const imagen1 = '/assets/CAROUSEL FAV/_DSC0051.jpg';
+const imagen2 = '/assets/CAROUSEL FAV/_DSC0155.jpg';
+const imagen3 = '/assets/CAROUSEL FAV/DJI_0007-Pano.jpg';
+const imagen4 = '/assets/CAROUSEL FAV/_DSC0133.jpg';
+const imagen5 = '/assets/CAROUSEL FAV/_DSC0052.jpg';
+const imagen6 = '/assets/CAROUSEL FAV/DJI_0011-Pano.jpg';
+const imagen7 = '/assets/CAROUSEL FAV/_DSC0084.jpg';
+const imagen8 = '/assets/CAROUSEL FAV/_DSC0136.jpg';
 
 const Carrousel = () => {
     const [activeIndex, setActiveIndex] = React.useState(0);

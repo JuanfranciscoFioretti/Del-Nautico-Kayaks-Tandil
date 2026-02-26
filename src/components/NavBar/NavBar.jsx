@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import Logo from '../../assets/LogoImg/logo-definitivo-no-background.png'
+// import Logo from '../../assets/LogoImg/logo-definitivo-no-background.png'
+const Logo = '/assets/LogoImg/logo-definitivo-no-background.png';
 import WaterIcon from './WaterIcon';
 
 
