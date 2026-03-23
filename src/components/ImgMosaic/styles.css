@@ -17,19 +17,27 @@
 
 .leftImage {
     max-width: 100% !important;
-    height: 300px;
+    height: auto;
     aspect-ratio: 1 / 1;
     margin-bottom: 10px;
+    object-fit: cover;
 }
 
 .mainImage {
     max-width: 100%;
-    width: auto;
-    height: 610px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
     margin-bottom: 25px;
-    background-position: cover;
-    /* width: auto;
-    aspect-ratio: 16 / 9; */
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .mainImage {
+        aspect-ratio: 9 / 16;
+    }
 }
 
 @media (min-width: 768px) {

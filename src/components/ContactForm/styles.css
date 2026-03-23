@@ -16,18 +16,38 @@
   
   .login-box {
     position: relative;
-    top: 50%;
+    top: auto;
     left: 50%;
-    width: 500px;
+    width: 90%;
+    max-width: 500px;
     /* height: 320px; */
     padding: 40px;
     margin-top: 5em;
     margin-bottom: 5em;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     background-color: #443f3f;
     box-sizing: border-box;
     box-shadow: 0 10px 17px rgba(135, 108, 83, 0.363);
     border-radius: 32px;
+  }
+
+  @media (max-width: 768px) {
+    .login-box {
+      width: 95%;
+      padding: 30px 20px;
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .login-box {
+      width: 100%;
+      padding: 20px 15px;
+      margin-top: 1em;
+      margin-bottom: 1em;
+      border-radius: 20px;
+    }
   }
   
   .login-box h1 {

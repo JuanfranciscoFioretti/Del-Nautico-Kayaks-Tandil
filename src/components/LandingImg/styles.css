@@ -5,4 +5,13 @@
     background-image: url('../../assets/BigImgs/_DSC0056.jpg');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+}
+
+@media (max-width: 768px) {
+    .header {
+        min-height: auto;
+        aspect-ratio: auto;
+        background-attachment: scroll;
+    }
 }

@@ -6,8 +6,23 @@
 }
 
 .carrousel-img {
-    height: 900px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
     object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .carrousel-img {
+        aspect-ratio: 9 / 16;
+    }
+}
+
+@media (max-width: 480px) {
+    .carrousel-img {
+        aspect-ratio: auto;
+        min-height: 250px;
+    }
 }
 
 /* Estilos para los controles del carousel de CoreUI */

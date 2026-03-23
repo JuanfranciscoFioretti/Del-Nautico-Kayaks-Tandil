@@ -8,11 +8,21 @@
 }
 
 .divBigImg {
-    width: 100vw;
-    height: 130vh;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
     background-image: url('../../assets/BigImgs/_DSC0136.jpg');
     background-size: cover;
     background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .divBigImg {
+        aspect-ratio: 9 / 16;
+    }
 }
 
 .imageOverlay {
